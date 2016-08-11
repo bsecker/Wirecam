@@ -1,6 +1,6 @@
-// nrf24_client.pde
 // -*- mode: C++ -*-
 
+// ---- PIN DEFINITIONS ----
 const int JOYSTICK_X_PIN = A2;
 const int JOYSTICK_Y_PIN = A1;
 const int POT_PIN        = A3;
