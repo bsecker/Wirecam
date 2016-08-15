@@ -30,7 +30,7 @@ void setup(){
   // set to 2.402 GHz (channel 2), 250kbps, 0dBm
   if (!nrf24.setChannel(1))
     Serial.println("setChannel failed");
-  if (!nrf24.setRF(RH_NRF24::DataRate2Mbps , RH_NRF24::TransmitPower0dBm))
+  if (!nrf24.setRF(RH_NRF24::DataRate250kbps , RH_NRF24::TransmitPower0dBm))
     Serial.println("setRF failed");
 
   Serial.println("Initialised RF link");   
