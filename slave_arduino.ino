@@ -1,8 +1,7 @@
 // -*- mode: C++ -*-
 #include <SPI.h>
 #include <RH_NRF24.h>
-#include <Servo.h>
-
+#include <SoftwareServo.h>
 
 RH_NRF24 nrf24;
 
@@ -22,7 +21,7 @@ int servo_pos = 89; // initial position of servo
 const int servo_pin = 7;
 
 // Initialise Yaw Servo
-Servo yaw_servo;
+SoftwareServo yaw_servo;
 
 void setup(){
   Serial.begin(9600);
@@ -58,7 +57,8 @@ void loop(){
     Serial.print(input[2]); Serial.println(" ");
     
    // Move Servo motor
-   move_servo_yaw(input[1]);
+   SoftwareServo::refresh();//refreshes servo to keep them updating
+   //move_servo_yaw(input[1]);
   }
 }
 
@@ -85,8 +85,8 @@ void move_servo_yaw( int input) {
 
   //Move servo
   servo_pos += speed_x;
-  servo_pos = constrain( servo_pos, 15, 180);
+  servo_pos = constrain( servo_pos, 15, 170);
   
-  
+  yaw_servo.write(servo_pos);
   // https://arduino-info.wikispaces.com/RadioLink-Joystick-To-Servos
 }
