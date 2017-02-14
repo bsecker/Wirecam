@@ -8,3 +8,5 @@ Files:
 * servo_receiver_test.ino - a 'smoothing' test.
 * test_1_servo.ino - a joystick test.
 * tranciever_test.ino - testing the wireless transceiver. 
+
+See [my website](http://benjamin.secker.nz/blog-post/5) for docs.
