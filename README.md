@@ -1,5 +1,9 @@
-# RBT300_Wirecam
-RBT300 Arduino Wirecam Project
+# Wirecam
+
+![our finished wirecam](http://benjamin.secker.nz/static/images/wirecam/wirecam_1.jpg)
+
+Arduino Wirecam Project.
+See [my website](http://benjamin.secker.nz/blog-post/5) for docs and description.
 
 Files:
 * WIRECAM_MAIN.ino - the main code for the arduino receiver. Look at this first!
@@ -9,4 +13,3 @@ Files:
 * test_1_servo.ino - a joystick test.
 * tranciever_test.ino - testing the wireless transceiver. 
 
-See [my website](http://benjamin.secker.nz/blog-post/5) for docs.
